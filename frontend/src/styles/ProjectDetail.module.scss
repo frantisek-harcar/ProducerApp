@@ -1,0 +1,150 @@
+@use 'variables';
+
+.contentContainer {
+    display: flex;
+    // margin-top: 2rem;
+
+    .paymentItems {
+        color: variables.$textGrey;
+
+        hr {
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .paymentItemsContent {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            max-height: 30vh;
+            overflow-y: scroll;
+
+            &::-webkit-scrollbar {
+                width: 0;
+                height: 0;
+            }
+
+            & {
+                scrollbar-width: none;
+            }
+        }
+
+        // color: #6a89d9;
+    }
+
+    .reservationsLabel {
+        display: flex;
+        justify-content: space-between!important;
+        align-items: center;
+        text-align: center;
+        font-weight: 500;
+        font-size: 1.2rem;
+        margin: 1em 0;
+    }
+
+    .reservationColumn {
+        max-height: 50vh;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar {
+            width: 0;
+        }
+
+        & {
+            scrollbar-width: none;
+        }
+
+        .reservations {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: stretch;
+
+            .reservation {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                flex: 1;
+                padding: 1rem 0.5rem;
+                margin-bottom: 1rem;
+                background-color: variables.$purple;
+                border-radius: 12px;
+
+                .title {
+                    font-weight: 500;
+                    font-size: 1.3rem;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+            }
+        }
+    }
+
+    .chatContainer {
+        border-radius: 12px 12px 0 0;
+        padding-left: 0;
+        padding-right: 0;
+        position: relative;
+        min-height: 70vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fileSidebar {
+        // margin-bottom: 6rem;
+        max-height: 40vh;
+        // padding: 0 2rem;
+        overflow-y: scroll;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: flex-start;
+        // align-items: start;
+        // float: left;
+
+        &::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+        }
+
+        & {
+            scrollbar-width: none;
+        }
+    }
+
+    // .filesContainer {
+    // justify-content: center;
+    // }
+}
+
+.chatterName {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.projectName {
+    margin: 1em 0;
+}
+
+@media screen and (max-height: 700px) {
+    .contentContainer {
+        padding-bottom: 8rem;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .fileSidebar {
+        padding-top: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .reservationColumn {
+        margin-bottom: 1rem;
+    }
+
+    .filesContainer {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+}

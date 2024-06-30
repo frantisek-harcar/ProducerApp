@@ -1,0 +1,12 @@
+.formControl {
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+
+    & {
+        scrollbar-width: none;
+    }
+    
+    min-height: 0em!important;
+    resize: none;
+}

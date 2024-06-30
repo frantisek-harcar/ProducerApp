@@ -1,0 +1,104 @@
+@use 'variables';
+
+.paymentItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+
+    .bigLayout {
+        display: flex;
+    }
+
+    .smallLayout {
+        display: none;
+    }
+
+    .paymentItemName {
+        padding-left: 1rem;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .paymentItemNameAdmin {
+        padding-left: 1rem;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+
+        &:hover {
+            color: variables.$tealActive!important;
+        }
+    }
+}
+
+.priceContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.priceValue {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-right: 0.5rem;
+    margin-left: auto;
+}
+
+.priceRow {
+    display: flex;
+    justify-content: end;
+}
+
+.priceRowSmall {
+    display: flex;
+    justify-content: start;
+}
+
+.priceContainerSmall {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.priceValueSmall {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-left: 1rem;
+    margin-right: auto;
+}
+
+.currencySmall {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-left: 0.5rem;
+    margin-right: auto;
+}
+
+@media (max-width: 1200px) {
+    .paymentItem {
+        .bigLayout {
+            display: none;
+        }
+
+        .smallLayout {
+            display: block;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .paymentItem {
+        .bigLayout {
+            display: flex;
+        }
+
+        .smallLayout {
+            display: none;
+        }
+    }
+}

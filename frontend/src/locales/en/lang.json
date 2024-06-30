@@ -1,0 +1,160 @@
+{
+    "general": {
+        "logIn": "Log in",
+        "logOut": "Log out",
+        "updated": "Updated",
+        "created": "Created",
+        "userNotFound": "User not found",
+        "currency": "CZK",
+        "free": "Free",
+        "loadingError": "An error occured while loading",
+        "totalPrice": "Total price",
+        "checkout": "Checkout",
+        "title": "Producer App",
+        "subtitle": "Exhoested's music studio"
+    },
+    "error": {
+        "somethingWentWrong": "Something went wrong. Try refreshing the page",
+        "unauthorized": "Sorry, you are not authorized to view this content",
+        "returnToHomepage": "Return to homepage",
+        "pageNotFound": "Page not found",
+        "invalidInput": "Invalid form input",
+        "itemNull": "Item not found"
+    },
+    "pages": {
+        "appName": "Producer App",
+        "projectsPageName": "Projects",
+        "usersPageName": "Users",
+        "settingsPageName": "Settings",
+        "filesPageName": "Files",
+        "calendarPageName": "Reservations"
+    },
+    "nav": {
+        "home": "Home",
+        "projects": "Projects",
+        "users": "Users",
+        "files": "Files",
+        "calendar": "Reservations",
+        "settings": "Settings"
+    },
+    "form": {
+        "submit": "Submit",
+        "emailLabel": "E-mail",
+        "emailPlaceholder": "E-mail",
+        "passwordLabel": "Password",
+        "passwordPlaceholder": "Password",
+        "nameLabel": "Name",
+        "namePlaceholder": "Name",
+        "nameUserLabel": "Name",
+        "nameUserPlaceholder": "Name",
+        "doneLabel": "Done",
+        "userLabel": "User",
+        "userPlaceholder": "User",
+        "priceLabel": "Price",
+        "pricePlaceholder": "Price",
+        "uploadFile": "Upload file",
+        "uploadToProject": "Upload to project",
+        "paidLabel": "Paid",
+        "colorLabel": "Color",
+        "selectDateTo": "Date to",
+        "selectDateFrom": "Date from",
+        "timeCaption": "Time",
+        "projectLabel": "Project",
+        "projectPlaceholder": "Project",
+        "confirmDeleteTitle": "Confirm deletion",
+        "cancel": "Cancel",
+        "archive": "Archive",
+        "unarchive": "Unarchive",
+        "delete": "Delete",
+        "oldPasswordLabel": "Old password",
+        "oldPasswordPlaceholder": "Old password",
+        "newPasswordLabel": "New password",
+        "newPasswordPlaceholder": "New password",
+        "newPasswordConfirmationLabel": "New password confirmation",
+        "newPasswordConfirmationPlaceholder": "New password confirmation",
+        "generatePassword": "Generate password"
+    },
+    "projects": {
+        "editProject": "Edit project",
+        "addProject": "Add project",
+        "thereAreNoProjects": "There are no projects yet",
+        "payments": "Payments",
+        "showArchived": "Archived projects",
+        "confirmDeleteMessage": "Are you sure you want to delete this project?",
+        "recentProjects": "Recently changed",
+        "users": "Users",
+        "orderBy": "Order By",
+        "confirmDeleteTitle": "Delete project",
+        "paymentItems": "Payment items"
+    },
+    "timer": {
+        "timeLabel": "Worked time",
+        "start": "Start",
+        "stop": "Stop"
+    },
+    "reservations": {
+        "reservationsLabel": "Reservations",
+        "reservationsProject": "Project",
+        "reservationsDate": "Date",
+        "editReservation": "Edit reservation",        
+        "addReservation": "Add reservation",
+        "deleteReservation": "Delete reservation",
+        "confirmDeleteMessage": "Are you sure you want to delete this reservation?",
+        "confirmDeleteTitle": "Delete reservation",
+        "day": "Day",
+        "week": "Week",
+        "month": "Month"
+    },
+    "paymentItems": {
+        "editPaymentItem": "Edit payment item",        
+        "addPaymentItem": "Add payment item",
+        "showItems": "All payment items",
+        "confirmDeleteMessage":"Are you sure you want to delete this payment item?"
+    },
+    "payment": {
+        "success": "Payment successful"        
+    },
+    "users": {
+        "editUser": "Edit user",
+        "addUser": "Add user",
+        "thereAreNoUsers": "There are no users yet",
+        "confirmDeleteMessage": "Are you sure you want to delete this user?",
+        "confirmDeleteTitle": "Delete user"
+    },
+    "files": {
+        "addFile": "Add File",
+        "thereAreNoFiles": "There are no files yet",
+        "confirmDeleteMessage": "Are you sure you want to delete this file?",
+        "confirmDeleteTitle": "Delete file"
+    },
+    "settings": {
+        "language": "Language",
+        "english": "English",
+        "czech": "Česky",
+        "changePassword": "Change password",
+        "changePasswordSuccess": "Password changed successfully"
+    },
+    "tables": {
+        "name": "Name",
+        "user": "User",
+        "project": "Project",
+        "newMessages": "New Messages",
+        "nameUser": "User",
+        "email": "E-mail",
+        "changes": "Changes",
+        "edit": "Edit",
+        "delete": "Delete",
+        "done": "Done",
+        "createdByUser": "Created By",
+        "price": "Price",
+        "size": "Size",
+        "download": "Download"
+    },
+    "tags": {
+        "tags": "Tags",
+        "addTags": "Add tags",
+        "add": "Submit",
+        "create": "Create and add",
+        "enableDelete": "Enable delete"
+    }
+}

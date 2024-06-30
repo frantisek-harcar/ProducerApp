@@ -1,0 +1,241 @@
+@use 'variables';
+
+.blockCenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.width100 {
+    width: 100%;
+}
+
+.width75 {
+    width: 75%;
+}
+
+.width50 {
+    width: 50%;
+}
+
+.clickable:hover {
+    cursor: pointer
+}
+
+.pushFromSidebar {
+    margin-left: 275px;
+}
+
+.teal {
+    color: variables.$teal;
+}
+
+.verticalBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.clickableText {
+    color: variables.$tealActive;
+
+    &:hover {
+        cursor: pointer;
+        color: variables.$tealActiveDarker;
+    }
+}
+
+.buttonColor {
+    background-color: variables.$teal;
+    border: variables.$teal;
+    color: variables.$textLight;
+
+    &:hover {
+        background-color: variables.$tealActive;
+        color: variables.$textLight;
+    }
+
+    &:active {
+        background-color: variables.$tealActiveDarker !important;
+        box-shadow: 0 0 0 0.25rem rgba(140, 255, 248, .25) !important;
+    }
+
+    &:focus-visible {
+        background-color: variables.$tealActiveDarker !important;
+        box-shadow: 0 0 0 0.25rem rgba(140, 255, 248, .25) !important;
+    }
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+%btn {
+    border-radius: 5px;
+    padding: 8px 20px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: variables.$teal;
+    border: variables.$teal;
+    display: flex;
+    justify-content: center;
+
+    &:hover {
+        background-color: variables.$tealActive;
+        border: variables.$tealActiveDarker;
+        color: variables.$textLight;
+    }
+
+    &:active {
+        border: none !important;
+        box-shadow: none !important;
+        background-color: variables.$tealActiveDarker !important;
+    }
+
+    &:focus-visible {
+        background-color: variables.$tealActiveDarker !important;
+        box-shadow: none !important;
+        border: none !important;
+    }
+}
+
+%btnBorderless {
+    @extend %btn;
+    padding: 0.2rem 0.8rem;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 12px;
+    margin: 0;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0);
+        border: 2px solid variables.$tealActiveDarker;
+        color: variables.$textLight;
+    }
+
+    &:active {
+        border: 2px solid rgba(0, 0, 0, 0) !important;
+        box-shadow: none !important;
+        background-color: variables.$tealActiveDarker !important;
+    }
+}
+
+.btnSM {
+    @extend %btn;
+}
+
+.btnM {
+    @extend %btn;
+    padding: 0.5rem 2rem;
+}
+
+.btnXL {
+    @extend %btn;
+    padding: 1rem 2rem;
+}
+
+.btnPayment {
+    @extend %btn;
+    border-radius: 12px;
+    padding: 1.5rem 4rem;
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+
+.btnProjectDetail {
+    @extend %btn;
+    padding: 0.5rem 4rem;
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+
+.btnTag {
+    @extend %btnBorderless;
+    margin-left: 1rem;
+    padding: 0.6rem;
+}
+
+.btnBorder {
+    @extend %btnBorderless;
+    border: 2px solid variables.$teal;
+
+    &:hover {
+        background-color: variables.$tealActive;
+        border: 2px solid variables.$tealActive;
+        color: variables.$textLight;
+    }
+}
+
+.btnBorderActive {
+    @extend %btnBorderless;
+    border: 2px solid variables.$teal;
+    background-color: variables.$teal;
+
+    &:hover {
+        background-color: variables.$tealActive;
+        border: 2px solid variables.$tealActive;
+        color: variables.$textLight;
+    }
+}
+
+.formInput {
+    &:focus {
+        box-shadow: 0 0 0 0.25rem rgba(105, 191, 186, .25);
+        border-color: variables.$teal !important;
+    }
+}
+
+.btnHomepage {
+    @extend %btn;
+    position: absolute;
+    top: 80%;
+    padding: 1.2rem 3rem;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 0;
+
+    &:hover {
+        border: 1px solid variables.$tealActive;
+        background-color: variables.$tealActiveDarker;
+    }
+}
+
+.lightText {
+    color: variables.$textLight;
+    &:hover{
+        color: variables.$textLight;
+    }
+    
+}
+
+.done {
+    color: variables.$success;
+}
+
+.pushUp {
+    z-index: 9000;
+}
+
+.elipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.textAlignRight {
+    text-align: right;
+}

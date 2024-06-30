@@ -1,0 +1,161 @@
+{
+    "general": {
+        "logIn": "Přihlásit se",
+        "logOut": "Odhlásit",
+        "updated": "Aktualizováno",
+        "created": "Upraveno",
+        "userNotFound": "Uživatel nenalezen",
+        "currency": "Kč",
+        "free": "Zdarma",
+        "loadingError": "Nastala chyba při načítání",
+        "totalPrice": "Celková cena",
+        "checkout": "Zaplatit",
+        "title": "Producer App",
+        "subtitle": "Exhoested's music studio"
+    },
+    "error": {
+        "somethingWentWrong": "Něco se pokazilo. Zkuste obnovit stránku",
+        "unauthorized": "Omlouváme se, ale nemáte oprávnění k zobrazení tohoto obsahu",
+        "returnToHomepage": "Zpět na domovskou stránku",
+        "pageNotFound": "Stránka nebyla nalezena",
+        "invalidInput": "Nesprávný vstup formuláře",
+        "itemNull": "Položka nenalezena"
+    },
+    "pages": {
+        "appName": "Producer App",
+        "projectsPageName": "Projekty",
+        "usersPageName": "Uživatelé",
+        "settingsPageName": "Nastavení",
+        "filesPageName": "Soubory",
+        "calendarPageName": "Rezervace"
+    },
+    "nav": {
+        "home": "Domů",
+        "projects": "Projekty",
+        "users": "Uživatelé",
+        "files": "Soubory",
+        "calendar": "Rezervace",
+        "settings": "Nastavení"
+    },
+    "form": {
+        "submit": "Potvrdit",
+        "emailLabel": "E-mail",
+        "emailPlaceholder": "E-mail",
+        "passwordLabel": "Heslo",
+        "passwordPlaceholder": "Heslo",
+        "nameLabel": "Název",
+        "namePlaceholder": "Název",
+        "nameUserLabel": "Jméno",
+        "nameUserPlaceholder": "Jméno",
+        "doneLabel": "Hotovo",
+        "userLabel": "Uživatel",
+        "userPlaceholder": "Uživatel",
+        "priceLabel": "Cena",
+        "pricePlaceholder": "Cena",
+        "uploadFile": "Nahrát soubor",
+        "uploadToProject": "Nahrát k projektu",
+        "paidLabel": "Zaplaceno",
+        "colorLabel": "Barva",
+        "selectDateTo": "Datum do",
+        "selectDateFrom": "Datum od",
+        "timeCaption": "Čas",
+        "projectLabel": "Projekt",
+        "projectPlaceholder": "Projekt",
+        "confirmDeleteTitle": "Potvrdit smazání",
+        "cancel": "Zrušit",
+        "archive": "Archivovat",
+        "unarchive": "Odarchivovat",
+        "delete": "Smazat",
+        "oldPasswordLabel": "Staré heslo",
+        "oldPasswordPlaceholder": "Staré heslo",
+        "newPasswordLabel": "Nové heslo",
+        "newPasswordPlaceholder": "Nové heslo",
+        "newPasswordConfirmationLabel": "Potvrzení nového hesla",
+        "newPasswordConfirmationPlaceholder": "Potvrzení nového hesla",
+        "generatePassword": "Vygenerovat heslo"
+
+    },
+    "projects": {
+        "editProject": "Upravit projekt",
+        "addProject": "Přidat projekt",
+        "thereAreNoProjects": "Zatím tu nejsou žádné projekty",
+        "payments": "Platby",
+        "showArchived": "Archivované projekty",
+        "confirmDeleteMessage": "Opravdu si přejete smazat tento projekt?",
+        "recentProjects": "Nedávno změněny",
+        "users": "Uživatelé",
+        "orderBy": "Seřadit podle",
+        "confirmDeleteTitle": "Smazat projekt",
+        "paymentItems": "Položky k platbě"
+    },
+    "timer": {
+        "timeLabel": "Odpracovaný čas",
+        "start": "Spustit",
+        "stop": "Zastavit"
+    },
+    "reservations": {
+        "reservationsLabel": "Rezervace",
+        "reservationsProject": "Projekt",
+        "reservationsDate": "Datum",
+        "editReservation": "Upravit rezervaci",
+        "addReservation": "Přidat rezervaci",
+        "deleteReservation": "Smazat rezervaci",
+        "confirmDeleteMessage": "Opravdu si přejete smazat tuto rezervaci?",
+        "confirmDeleteTitle": "Smazat rezervaci",
+        "day": "Den",
+        "week": "Týden",
+        "month": "Měsíc"
+    },
+    "paymentItems": {
+        "editPaymentItem": "Upravit položku",        
+        "addPaymentItem": "Přidat položku",
+        "showItems": "Všechny položky",
+        "confirmDeleteMessage":"Opravdu si přejete smazat tuto položku?"
+    },
+    "payment": {
+        "success": "Platba proběhla úspěšně"   
+    },
+    "users": {
+        "editUser": "Upravit uživatele",
+        "addUser": "Přidat uživatele",
+        "thereAreNoUsers": "Zatím tu nejsou žádní uživatelé",
+        "confirmDeleteMessage": "Opravdu si přejete smazat tohoto uživatele?",
+        "confirmDeleteTitle": "Smazat uživatele"
+    },
+    "files": {
+        "addFile": "Přidat Soubor",
+        "thereAreNoFiles": "Zatím tu nejsou žádné soubory",
+        "confirmDeleteMessage": "Opravdu si přejete smazat tento soubor?",
+        "confirmDeleteTitle": "Smazat soubor"
+    },
+    "settings": {
+        "language": "Jazyk",
+        "english": "English",
+        "czech": "Česky",
+        "changePassword": "Změnit heslo",
+        "changePasswordSuccess": "Změna hesla proběhla úspěšně"
+    },
+    "tables": {
+        "name": "Název",
+        "user": "Uživatel",
+        "project": "Projekt",
+        "newMessages": "Nové Zprávy",
+        "nameUser": "Jméno",
+        "email": "E-mail",
+        "changes": "Změny",
+        "edit": "Upravit",
+        "delete": "Smazat",
+        "done": "Hotovo",
+        "createdByUser": "Vytvořil",
+        "price": "Cena",
+        "size": "Velikost",
+        "download": "Stáhnout"
+    },
+    "tags": {
+        "tags": "Tagy",
+        "addTags": "Přidat tagy",
+        "add": "Potvrdit",
+        "create": "Vytvořit a přidat",
+        "enableDelete": "Povolit smazání"
+    }
+}

@@ -1,0 +1,160 @@
+@use 'variables';
+
+.topBar{
+    background-color: variables.$messageInputGrey;
+    border-radius: 12px 12px 0 0;
+    .chatterName {
+        font-size: 1.7rem;
+        padding: 0.3em 0;
+    }
+}
+
+.chat {
+    position: relative;
+    width: 100%;
+    min-height: 70vh;
+    max-height: 70vh;
+    background-color: variables.$background;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    // border-radius: 12px;
+
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+
+    & {
+        scrollbar-width: none;
+    }
+
+    .messagesContainer {
+        height: 100%;
+        display: flex;
+        flex: 1;
+        justify-content: flex-end;
+        flex-direction: column;
+        padding: 1rem;
+        max-height: 100%;
+
+        .message {
+            padding: 0.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .senderRow {
+            display: flex;
+            margin: 0 0 0 auto;
+            max-width: 85%;
+            justify-content: end;
+            padding: 0.2rem;
+            // margin-right: 1rem;
+            overflow-wrap: break-word;
+            word-break: break-all;
+
+            .messageContent {
+                background-color: variables.$messageBlue;
+                padding: 1rem;
+                padding-right: 4rem;
+                border-radius: 12px;
+                max-width: 100%;
+                overflow-wrap: break-word;
+                position: relative;
+
+                .sentAt {
+                    padding: 0 0.5rem;
+                    // font-size: 0.8rem;
+                    position: absolute;
+                    right: 0;
+                    bottom: 10%;
+
+                    .senderTime {
+                        color: variables.$textSenderTime;
+                    }
+
+                    .recipientTime {
+                        color: variables.$textRecipientTime;
+                    }
+                }
+            }
+        }
+
+        .recipientRow {
+            display: flex;
+            margin: 0 auto 0 0;
+            max-width: 85%;
+            padding: 0.2rem;
+            justify-content: flex-start;
+            overflow-wrap: break-word;
+            word-break: break-all;
+
+            .messageUsername {
+                color: variables.$textGrey;
+                margin-bottom: 0.5rem
+            }
+
+            .messageContent {
+                background-color: variables.$messageGrey;
+                padding: 1rem;
+                padding-right: 4rem;
+                border-radius: 12px;
+                overflow-wrap: break-word;
+                position: relative;
+
+                .sentAt {
+                    padding: 0 0.5rem;
+                    // font-size: 0.8rem;
+                    position: absolute;
+                    right: 0;
+                    bottom: 10%;
+
+                    .senderTime {
+                        color: variables.$textSenderTime;
+                    }
+
+                    .recipientTime {
+                        color: variables.$textRecipientTime;
+                    }
+                }
+            }
+        }
+    }
+
+    .sendMessageContainer {
+        // transform: translate(0%, 75%);
+        word-break: break-all;
+        position: sticky;
+        // padding-top: 1rem;
+        padding-left: 0;
+        padding-right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        // bottom: 140px;
+        // display: flex;
+        // width: 45%;
+        // position: fixed;
+        // bottom: 180;
+
+        .sendMessageForm {
+            min-width: 100%;
+            background-color: variables.$messageInputGrey;
+            border-radius: 0 0 12px 12px;
+            padding-top: 1rem;
+            margin-right: 0;
+            margin-left: 0;
+
+            .messageInput {
+                color: variables.$textLight;
+                background-color: variables.$background;
+                border: none;
+            }
+        }
+
+        .sendButton {
+            border: none;
+            background-color: variables.$teal;
+        }
+
+    }
+}

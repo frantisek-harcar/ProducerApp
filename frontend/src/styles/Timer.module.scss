@@ -1,0 +1,81 @@
+@use 'variables';
+
+.timer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.workedTime {
+    display: flex;
+
+    .workedTimeNumber {
+        font-weight: 300;
+        font-size: 2rem;
+    }
+}
+
+
+.workedTimeLabel {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+%workedTimeButton {
+    border-radius: 5px;
+    padding: 8px 20px;
+    margin: 1em 0;
+
+    &:hover {
+        background-color: variables.$tealActive;
+        border: variables.$tealActiveDarker;
+        color: variables.$textLight;
+    }
+
+    &:active {
+        border: none !important;
+        box-shadow: none !important;
+        background-color: variables.$tealActiveDarker !important;
+    }
+
+    &:focus-visible {
+        background-color: variables.$tealActiveDarker !important;
+        box-shadow: none !important;
+        border: none !important;
+    }
+}
+
+.workedTimeButtonStart {
+    @extend %workedTimeButton;
+    background-color: variables.$teal;
+    border: variables.$teal;
+}
+
+.workedTimeButtonStop {
+    @extend %workedTimeButton;
+    background-color: variables.$textDanger;
+    border: variables.$textDanger;
+
+
+    &:hover {
+        background-color: variables.$textDangerActive;
+        border: variables.$textDangerActive;
+    }
+
+    &:active {
+        background-color: variables.$tealActiveDarker !important;
+    }
+
+    &:focus-visible {
+        background-color: variables.$tealActiveDarker !important;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .workedTime {
+        .workedTimeNumber {
+            font-size: 1.5rem;
+        }
+    }
+}

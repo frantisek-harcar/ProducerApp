@@ -1,0 +1,111 @@
+@use 'variables';
+
+.iconTextRow {
+    margin: 1.5rem 0 1.5rem 0;
+
+    .textContainer {
+        text-decoration: none;
+        color: variables.$textLight;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        a {
+            text-decoration: none;
+            color: variables.$textLight;
+        }
+    }
+
+    .iconContainer {
+        position: relative;
+
+        .iconPaid {
+            filter: invert(40%) sepia(72%) saturate(1548%) hue-rotate(233deg) brightness(101%) contrast(101%);
+
+            img {
+                color: variables.$musicIcon;
+                height: 32px;
+                width: 32px;
+            }
+        }
+
+        .iconUnpaid {
+            filter: invert(40%) sepia(72%) saturate(1548%) hue-rotate(233deg) brightness(101%) contrast(101%);
+            filter: grayscale(100%) brightness(115%) contrast(30%);
+
+            img {
+                color: variables.$textGrey;
+                height: 32px;
+                width: 32px;
+            }
+
+        }
+    }
+
+    &:hover {
+        .textContainer {
+            a {
+                color: variables.$tealActive;
+            }
+            
+        }
+        .iconPaid {
+            filter: invert(50%) sepia(72%) saturate(1548%) hue-rotate(233deg) brightness(101%) contrast(101%);
+        }
+    }
+}
+
+.iconTextRowAdmin {
+    margin: 1.5rem 0 1.5rem 0;
+
+    .textContainer {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        &:hover {
+            color: variables.$tealActive;
+        }
+    }
+
+    .iconContainer {
+        position: relative;
+
+        .iconPaid {
+            filter: invert(40%) sepia(72%) saturate(1548%) hue-rotate(233deg) brightness(101%) contrast(101%);
+
+            img {
+                color: variables.$musicIcon;
+                height: 32px;
+                width: 32px;
+            }
+
+            &:hover {
+                filter: invert(50%) sepia(72%) saturate(1548%) hue-rotate(233deg) brightness(101%) contrast(101%);
+            }
+        }
+
+        .iconUnpaid {
+            filter: invert(40%) sepia(72%) saturate(1548%) hue-rotate(233deg) brightness(101%) contrast(101%);
+            filter: grayscale(100%) brightness(115%) contrast(30%);
+
+            img {
+                color: variables.$textGrey;
+                height: 32px;
+                width: 32px;
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    // .iconTextRow {
+    //     margin-top: calc(-1 * var(--bs-gutter-y));
+    //     margin-right: calc(-.5 * var(--bs-gutter-x));
+    //     margin-left: calc(-.5 * var(--bs-gutter-x));
+    // }
+}

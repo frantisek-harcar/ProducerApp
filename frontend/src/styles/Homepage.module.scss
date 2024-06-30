@@ -1,0 +1,69 @@
+.homepageContainer {
+    height: 100vh;
+    width: 100vw;
+    -webkit-box-shadow: inset 0px -250px 200px -12px rgba(0, 0, 0, 0.77);
+    -moz-box-shadow: inset 0px -250px 200px -12px rgba(0, 0, 0, 0.77);
+    box-shadow: inset 0px -350px 200px -12px rgba(0, 0, 0, 0.94);
+    background-image: url("/public/studio.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .titleContainer {
+        display: flex;
+        flex-direction: column;
+        top: 35%;
+        padding: 10px;
+        position: absolute;
+        align-items: center;
+
+        .shadow {
+            position: absolute;
+            top: 3%;
+            padding: 2rem;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(0, 0, 0, 0.41), transparent);
+            filter: blur(20px);
+            box-shadow: 10px 10px 95px 82px rgba(0, 0, 0, 0.51) inset;
+            -webkit-box-shadow: 10px 10px 95px 82px rgba(0, 0, 0, 0.51) inset;
+            -moz-box-shadow: 10px 10px 95px 82px rgba(0, 0, 0, 0.51) inset;
+            z-index: 1;
+        }
+
+        .title {
+            top: 15%;
+            font-size: 10rem;
+            z-index: 2;
+        }
+
+        .subtitle {
+            top: 25%;
+            font-size: 3rem;
+            z-index: 2;
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 700) {
+    .homepageContainer {
+        .titleContainer {
+            .title {
+                font-size: 7rem;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 500) {
+    .homepageContainer {
+        .titleContainer {
+            .title {
+                font-size: 5rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,37 @@
+@use 'variables';
+
+:root {
+    --fc-border-color: #373b86;
+    --fc-today-bg-color: rgba(85, 145, 144, 0.65);
+    --fc-event-bg-color: #373b86;
+    --fc-event-border-color: #373b86;
+    --fc-event-text-color: #fff;
+}
+
+.calendar ::-webkit-scrollbar {
+    width: 10 !important;
+}
+
+.toolbarButtons > *{
+    margin-right: 1rem;
+}
+
+.toolbarButtons {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+}
+
+.calendar {
+    padding-top: 4rem;
+    scrollbar-width: none;
+
+    .toolbar {
+        display: flex;
+    }
+
+    a {
+        color: variables.$textLight;
+        text-decoration: none;
+    }
+}

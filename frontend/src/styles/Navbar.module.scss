@@ -1,0 +1,139 @@
+@use 'variables';
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    // margin-bottom: 0;
+}
+
+.navbar {
+    background-color: variables.$background;
+    height: 80px;
+    // color: variables.$textLight;
+    display: flex;
+    // justify-content: flex-start;
+    align-items: center;
+    //     position: sticky;
+    //     top: 0;
+    //     left: 0;
+    //     z-index: 500;
+
+    -webkit-box-shadow: 0px -2px 11px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px -2px 11px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px -2px 11px -1px rgba(0, 0, 0, 0.75);
+
+    .logout {
+        position: absolute;
+        right: 3rem;
+    }
+
+    .pageTitle {
+        font-size: 2rem;
+        position: absolute;
+        left: 275px;
+    }
+
+}
+
+.menuBars {
+    margin-left: 2rem;
+    font-size: 2rem;
+    background: none;
+    color: variables.$textLight;
+    display: none;
+    &:hover {
+        color: variables.$textLight;
+    }
+}
+
+.navMenu {
+    background-color: variables.$background;
+    width: 200px;
+    height: 100vh;
+    // display: flex;
+    // justify-content: center;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: 850ms;
+    z-index: 1000;
+
+    &.active {
+        border-right: 1px solid variables.$purple;
+        left: 0;
+        transition: 250ms;
+    }
+
+    .navMenuItems {
+        
+        .navText {
+            margin-bottom: 0.3rem;
+            a {
+                text-decoration: none;
+                color: variables.$textLight;
+                font-size: 18px;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                padding: 0 16px;
+
+                &:hover {
+                    background-color: variables.$purple;
+                }
+            }
+
+            span {
+                margin: 16px;
+            }
+        }
+
+        .navTextActive {
+            @extend .navText;
+
+            a {
+                background-color: variables.$purple;
+            }
+        }
+
+        .navbarToggle {
+            background-color: variables.$background;
+            // display: none;
+            // width: 100%;
+            height: 80px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+    }
+
+}
+
+@media screen and (max-width: 1519px) {
+    .menuBars{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 699px) {
+    .navbar {
+        .pageTitle {
+            left: 250px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .navbar {
+        .pageTitle {
+            left: 100px;
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .navbar {
+        .pageTitle {
+            left: 80px;
+        }
+    }
+}
